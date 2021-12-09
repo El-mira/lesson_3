@@ -6,7 +6,7 @@ import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class DairyNote {
+public class DiaryNewNote {
     private static WebDriver driver;
     private static final String LOGIN_PAGE_URL = "https://diary.ru/user/login";
 
@@ -29,6 +29,8 @@ public class DairyNote {
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='message_ifr']")));
 
         driver.findElement(By.xpath("//body")).sendKeys("Мороз и солнце");
+
+        Thread.sleep(3000);
 
         driver.switchTo().parentFrame();
 
