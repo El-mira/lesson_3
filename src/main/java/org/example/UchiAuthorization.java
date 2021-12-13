@@ -27,7 +27,7 @@ public class UchiAuthorization {
 
         driver.findElement(By.id("login")).sendKeys("karina_mixt@mail.ru");
 
-        driver.findElement(By.id("password")).sendKeys("daulmirra2014");
+        driver.findElement(By.id("password")).sendKeys("daulmirra2014"); // daulmirra2015 актуальный
 
         driver.findElement(By.xpath("//input[@type='submit']")).click();
 
